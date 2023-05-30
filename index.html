@@ -1,0 +1,47 @@
+
+<!-- CODE BY KAUVERY SINGH -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- title of the website -->
+    <title>Real-Time Chat Web App</title>
+    
+    <!-- including script to html -->
+    <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script defer src="js/client.js"></script>
+    
+    <!-- including css to html -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- adding icon to the website -->
+    <link rel="icon" href="icon.ico">
+</head>
+<body>
+    <nav>
+        <!-- adding logo at navbar -->
+        <img class="logo" src="logo.png" alt="logo">
+
+        <!-- adding name of the user at top -->
+        <h1>Welcome Back <span id="username"></span></h1>
+    </nav>
+    <!-- this is the main container where all sending-receiving things will happen -->
+    <div class="container"></div> 
+    
+    <!-- this div used to create a message sending form -->
+    <div class="send">
+        <form action="#" id="send-container">
+            <!-- message input space, when empty it will show the placeholder message -->
+            <input type="text" name="messageInp" id="messageInp" placeholder="Enter text here">
+            
+            <!-- send button -->
+            <button class="btn" type="submit" style="color: rgb(255, 255, 255);font-family: monospace ;text-align: center;"><b>SEND</b></button>
+        </form>
+    </div>
+</body>
+</html>
+
+<!-- CODE BY KAUVERY SINGH -->
